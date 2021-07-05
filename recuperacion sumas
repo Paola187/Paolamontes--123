@@ -1,0 +1,17 @@
+% Paola Garcia Montes
+%f(x)=3x-7 [1,6]
+%recuperación
+%05/07/2021
+b=1;
+a=6;
+n=input('Ingrese valor de n: ');
+base=(b-a)/n;
+A=0;
+x=a;
+for i=0:n-1
+  x += base;
+  f = (3 * x-7);
+  A = A + abs(base*f);
+endfor 
+printf("Area = ");
+disp(A);
