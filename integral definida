@@ -1,0 +1,20 @@
+% Paola Garcia Montes
+% v(t)=t^2+t
+%recuperación
+%05/07/2021
+clear
+clc
+fun=@(t) sqrt(t)+t;
+integral=quad(fun,2,5) 
+
+t=2:0.1:5;
+v=sqrt(t)+t;
+% Dibujar grafica
+area(t,v)
+grid on; 
+% Titulo
+title("v(t)=√t^2+t");
+% Etiqueta para x
+xlabel("t");
+% Etiqueta para y
+ylabel("v");
