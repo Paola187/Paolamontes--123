@@ -1,0 +1,17 @@
+% Paola Garcia Montes
+%f(x)=-x^2+9  [-2,4]
+%recuperación
+%05/07/2021
+b=-2;
+a=4;
+n=input('Ingrese valor de n: ');
+base=(b-a)/n;
+A=0;
+x=a;
+for i=0:n-1
+  x += base;
+  f = (-x.^2)+2;
+  A = A + abs(base*f);
+endfor 
+printf("Area = ");
+disp(A);
