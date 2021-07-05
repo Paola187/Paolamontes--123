@@ -1,0 +1,20 @@
+% Paola García Montes
+% v (t) = t ^ 2 + t
+% recuperación
+% 05/07/2021
+clear
+clc
+diversión = @ (t) sqrt (t) + t;
+integral = quad (divertido, 2,8)
+
+t = 2: 0.1:8;
+v = raíz cuadrada (t) + t;
+% Dibujar grafica
+área (t, v)
+cuadrícula activa; 
+% Titulo
+título ("v (t) = √t ^ 2 + t");
+% Etiqueta para x
+xlabel ("t");
+% Etiqueta para y
+ylabel ("v");
